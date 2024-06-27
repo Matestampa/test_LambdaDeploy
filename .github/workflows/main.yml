@@ -15,7 +15,7 @@ jobs:
         run: |
           npm ci
       
-      - name: build zip
+      - name: build zipp
         run: |
           npmx ncc build index.js
           zip zip -j deploy.zip ./dist/*
