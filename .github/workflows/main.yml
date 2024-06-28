@@ -17,7 +17,7 @@ jobs:
       
       - name: build zipp
         run: |
-          npmx ncc build index.js
+          npx ncc build index.js
           zip zip -j deploy.zip ./dist/*
       
       - name: Configure AWS Credentials
